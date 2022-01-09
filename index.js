@@ -1,10 +1,12 @@
 import {contarOvejas} from './Exercise_01/code.js';
-import {} from './Exercise_02/code.js';
+import {listGifts} from './Exercise_02/code.js';
 import {} from './Exercise_03/code.js';
 import {} from './Exercise_04/code.js';
 import {} from './Exercise_05/code.js';
 import {} from './Exercise_06/code.js';
 import {} from './Exercise_07/code.js';
+
+import {getSum} from './Codewars/kata_01.js';
 
 
 function app (){
@@ -16,7 +18,11 @@ function app (){
         { name: 'AAAAAaaaaa', color: 'rojo' },
         { name: 'Nnnnnnnn', color: 'rojo'}
       ]
+      const letter = 'bici coche balón _playstation bici coche peluche'
+
       contarOvejas(ovejas);
+      listGifts(letter);
+      getSum( 2,50 )
 }
 
 app ()
