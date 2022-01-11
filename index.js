@@ -7,7 +7,7 @@ import {} from './Exercise_06/code.js';
 import {} from './Exercise_07/code.js';
 
 import {getSum} from './Codewars/kata_01.js';
-
+import {movie} from './Codewars/kata_02.js';
 
 function app (){
     const ovejas = [
@@ -23,6 +23,7 @@ function app (){
       contarOvejas(ovejas);
       listGifts(letter);
       getSum( 2,50 )
+      movie(card, ticket, perc)
 }
 
 app ()
