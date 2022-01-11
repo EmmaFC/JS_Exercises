@@ -24,8 +24,6 @@ movie(100, 10, 0.95) should return 24
 
 export function movie(card, ticket, perc) {
 
-
-
     let i = 0;
     let count_A = 0;
     let system_B = card;
@@ -36,8 +34,7 @@ export function movie(card, ticket, perc) {
        let x =  system_B + (ticket * pow_A); //500 + 15
       let y =  system_A + num_B; // 15
       let result = Math.abs(x, y)
-      
-      return result
+    
       i++
       count_A ++;
         
