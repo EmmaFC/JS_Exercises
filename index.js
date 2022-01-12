@@ -19,11 +19,12 @@ function app (){
         { name: 'Nnnnnnnn', color: 'rojo'}
       ]
       const letter = 'bici coche balón _playstation bici coche peluche'
+     
 
       contarOvejas(ovejas);
       listGifts(letter);
       getSum( 2,50 )
-      movie(card, ticket, perc)
+      movie(100, 10, 0.95)
 }
 
 app ()

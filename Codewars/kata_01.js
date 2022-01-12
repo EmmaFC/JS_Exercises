@@ -5,7 +5,8 @@ Given two integers a and b, which can be positive or negative, find the sum of a
 
 
 export function getSum( a,b ){
-    
+    let sum;
+
     if(a<b){
         for (let i = a; i<=b; i++){
         sum += i; 

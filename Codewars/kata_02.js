@@ -21,23 +21,30 @@ movie(100, 10, 0.95) should return 24
  */
 
 
-
 export function movie(card, ticket, perc) {
 
-    let i = 0;
-    let count_A = 0;
-    let system_B = card;
-    let system_A = ticket;
-    while (0 == 1) {
-      let pow_A = Math.pow(perc, i);
-      let num_B = ticket * count_A;
-       let x =  system_B + (ticket * pow_A); //500 + 15
-      let y =  system_A + num_B; // 15
-      let result = Math.abs(x, y)
-    
-      i++
-      count_A ++;
-        
-    } return result
+    let count = 0;
+    let base = ticket * perc;
+    let increment = ticket * perc;
+
+    while (true) {
+
+      let system_B = card + increment;
+      let system_A = ticket + count*ticket;
+      count++
+     
+      if(system_B < system_A){
+          console.log('veces ' + count)
+          return count++;
+        }
+      if(system_B == system_A){
+          
+          return count++;
+        }
+       
+      let nA = Math.pow(perc, count);
+      increment = increment + (base*nA)    
+      
+    } 
       
   };
