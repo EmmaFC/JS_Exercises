@@ -29,10 +29,7 @@ export function validSpacing(s) {
   })
   let n = 
  arrayWord = s.split(/[ :;?!~,`"&|()<>{}\[\]\r\n/\\]+/).join('. ').split('.');
-  arrayWord.forEach((x) => {
-console.log(x)   
-     i+1   
-    } )
+
 console.log(arrayWord) 
   console.log('expecting: ' + arraySpaces.length+ ' to equal: ' + arrayWord.length)   
   

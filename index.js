@@ -28,7 +28,7 @@ function app (){
       getSum( 2,50 )
       movie(100, 10, 0.95)
       solution('abc', 'bc')
-      validSpacing('Hello  world')
+      validSpacing(' Hello world')
 }
 
 app ()
