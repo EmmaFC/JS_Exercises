@@ -16,34 +16,12 @@ For this kata, the definition of valid spacing is one space between words, and n
 '' = true */
 
 export function validSpacing(s) {
-
-  let i =0
-  let a = Array.from(s);
-  let arrayWord=[];
-  let arraySpaces=[];
-  a.forEach((space) => {
-    if(space == ' '){
-      arraySpaces.push(space);
-    }  
-     
-  })
-
- arrayWord = s.split(/[:;?!~,`"&|()<>{}\[\]\r\n/\\]+/).join('. ').split('.');
-
-console.log(arrayWord) 
-  console.log('expecting: ' + arraySpaces.length+ ' to equal: ' + arrayWord.length)   
-  
-   if(arraySpaces.length == 1 && arrayWord.length == 2){
-    return true
-  }
+  const expReg = /(\s{2,})/g;
+  let arraySpaces = s.split(' ').length - 1;
+  let arrayWord = s.trim(' ').replace(expReg,' ').split(' ');
  
-   if(arraySpaces.length == 1 && arrayWord.length == 1){
-    return false
-  }
-   if (arraySpaces.length == arrayWord.length-1){
-    return true
-  }
-  return false
-      
+   return (arraySpaces == 1 && arrayWord.length == 2)? true :
+          (arraySpaces == 1 && arrayWord.length == 1)? false :
+          (arraySpaces == arrayWord.length-1)? true : false ;
   
 }
