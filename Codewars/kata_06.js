@@ -13,16 +13,10 @@ Examples:
                                        #  9+3 = 12  -->  2
 */
 export function incrementer(nums) { 
-    for (let i=0;i<nums;i++){
-        let eachNumber = nums[i];
-        let newNumbers = eachNumber + i;
-        if(newNumbers > 9){
-        return newNumbers;
-        }
-        if(newNumbers > 9){
-        return newNumbers - 10;
-        }
-        
-    }
-    return nums;
+   
+  let numbers = nums.map((x)=>{
+     let y =  nums.indexOf(x)+1
+     return (x+y >= 10)? x+y-10 : x+y
+})
+  return numbers
 }
