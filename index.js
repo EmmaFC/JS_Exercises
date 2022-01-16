@@ -11,6 +11,7 @@ import {movie} from './Codewars/kata_02.js';
 import {solution} from './Codewars/kata_03.js';
 import {validSpacing} from './Codewars/kata_04.js';
 import {cookingTime} from './Codewars/kata_05.js';
+import {incrementer} from './Codewars/kata_06.js';
 
 function app (){
     const ovejas = [
@@ -22,7 +23,7 @@ function app (){
         { name: 'Nnnnnnnn', color: 'rojo'}
       ]
       const letter = 'bici coche balón _playstation bici coche peluche'
-     
+     let nums = [4, 6, 9, 1, 3]
 
       contarOvejas(ovejas);
       listGifts(letter);
@@ -31,6 +32,7 @@ function app (){
       solution('abc', 'bc')
       validSpacing(' Hello world')
       cookingTime(12)
+      incrementer(nums)
 }
 
 app ()
