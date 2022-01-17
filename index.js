@@ -12,6 +12,8 @@ import {solution} from './Codewars/kata_03.js';
 import {validSpacing} from './Codewars/kata_04.js';
 import {cookingTime} from './Codewars/kata_05.js';
 import {incrementer} from './Codewars/kata_06.js';
+import {rowWeights} from './Codewars/kata_07.js';
+
 
 function app (){
     const ovejas = [
@@ -33,6 +35,7 @@ function app (){
       validSpacing(' Hello world')
       cookingTime(12)
       incrementer(nums)
+      rowWeights(array)
 }
 
 app ()
