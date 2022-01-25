@@ -13,6 +13,7 @@ import {validSpacing} from './Codewars/kata_04.js';
 import {cookingTime} from './Codewars/kata_05.js';
 import {incrementer} from './Codewars/kata_06.js';
 import {rowWeights} from './Codewars/kata_07.js';
+import {flyBy} from './Codewars/kata_08.js';
 
 
 function app (){
@@ -26,7 +27,8 @@ function app (){
       ]
       const letter = 'bici coche balón _playstation bici coche peluche'
      let nums = [4, 6, 9, 1, 3]
-
+      let lamps = 'xxxxxx';
+      let drone = '====T';
       contarOvejas(ovejas);
       listGifts(letter);
       getSum( 2,50 )
@@ -35,7 +37,8 @@ function app (){
       validSpacing(' Hello world')
       cookingTime(12)
       incrementer(nums)
-      rowWeights(array)
+/*       rowWeights(array)
+ */      flyBy(lamps, drone)
 }
 
 app ()
