@@ -14,6 +14,7 @@ import {cookingTime} from './Codewars/kata_05.js';
 import {incrementer} from './Codewars/kata_06.js';
 import {rowWeights} from './Codewars/kata_07.js';
 import {flyBy} from './Codewars/kata_08.js';
+import {largestCrossSum} from './Codewars/kata_09.js';
 
 
 function app (){
@@ -25,6 +26,7 @@ function app (){
         { name: 'AAAAAaaaaa', color: 'rojo' },
         { name: 'Nnnnnnnn', color: 'rojo'}
       ]
+      
       const letter = 'bici coche balón _playstation bici coche peluche'
      let nums = [4, 6, 9, 1, 3]
       let lamps = 'xxxxxx';
@@ -39,6 +41,7 @@ function app (){
       incrementer(nums)
 /*       rowWeights(array)
  */      flyBy(lamps, drone)
+      largestCrossSum(matrix)
 }
 
 app ()
