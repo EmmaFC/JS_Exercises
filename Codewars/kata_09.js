@@ -21,8 +21,7 @@ export function largestCrossSum(matrix) {
         
       for(let z=0; z < matrix.length; z++){
         let column = array[z]
-        count + number
-        countingArray.push(count)
+       
       }
         
       })
